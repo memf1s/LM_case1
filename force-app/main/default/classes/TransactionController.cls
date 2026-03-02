@@ -3,6 +3,7 @@ public with sharing class TransactionController {
     private final static String ERROR_ACCOUNT_ID_INVALID = 'Account record Id is missing or invalid.';
     private final static String ERROR_EXTERNAL_ID_INVALID = 'Customer External Id is outside bounds.';
     private final static String ERROR_START_DATE_REQUIRED = 'Start Date is required.';
+    private final static String ERROR_END_DATE_INVALID = 'End Date is invalid, it must be bigger than Start Date.';
 
     /**
      * Fetches transactions from the BSS API for the given Salesforce Account.
@@ -26,12 +27,15 @@ public with sharing class TransactionController {
             Datetime endDatetime = String.isNotBlank(endDate)
                     ? (Datetime) JSON.deserialize('"' + endDate + '"', Datetime.class)
                     : null;
+            if (endDatetime != null && startDatetime > endDatetime) {
+                throw new AuraHandledException(ERROR_END_DATE_INVALID);
+            }
 
             TransactionService.TransactionsResponseDTO trDto = TransactionService.getTransactionDetails(customerId, startDatetime, endDatetime);
-            System.debug(trDto);
+
             return trDto;
         } catch(Exception ex) {
-            // TODO: Log errors
+            // TODO: Log errors properly
             throw new AuraHandledException(ex.getMessage());
         }
     }
@@ -43,18 +47,18 @@ public with sharing class TransactionController {
      * @return External Customer Id
      */
     private static Integer getAccountExternalId(Id accountId) {
-        Account account = [
+        List<Account> accounts = [
                 SELECT Customer_Id__c
                 FROM Account
                 WHERE Id = :accountId
                 WITH SECURITY_ENFORCED
                 LIMIT 1
         ];
-        if (account == null) {
+        if (accounts == null || accounts.isEmpty()) {
             throw new AuraHandledException('Account not found: ' + accountId);
         }
 
-        return toIntegerSafe(account.Customer_Id__c);
+        return toIntegerSafe(accounts[0].Customer_Id__c);
     }
 
 

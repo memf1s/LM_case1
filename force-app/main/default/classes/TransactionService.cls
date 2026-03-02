@@ -106,7 +106,7 @@ public with sharing class TransactionService {
             if(customerId == null || String.isBlank(startDate)) {
                 throw new TransactionServiceException(ERROR_MISSING_ARGUMENTS);
             }
-            String paramString = 'customerId=' + customerId;
+            String paramString = '?customerId=' + customerId;
             paramString += '&startDate=' +  EncodingUtil.urlEncode(startDate, 'UTF-8');
             paramString += (endDate != null)
                     ? '&endDate=' +  EncodingUtil.urlEncode(endDate, 'UTF-8')
