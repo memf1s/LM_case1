@@ -13,7 +13,7 @@ public with sharing class TransactionController {
      * @param endDate ISO-8601 date-time string
      * @return List of TransactionDTO wrappers
      */
-    @AuraEnabled
+    @AuraEnabled(Cacheable=true)
     public static TransactionService.TransactionsResponseDTO getAccountTransactions(String accountId, String startDate, String endDate) {
         if (String.isBlank(accountId) || !isValidId(accountId)) {
             throw new AuraHandledException(ERROR_ACCOUNT_ID_INVALID);
@@ -54,7 +54,7 @@ public with sharing class TransactionController {
                 WITH SECURITY_ENFORCED
                 LIMIT 1
         ];
-        if (accounts == null || accounts.isEmpty()) {
+        if (accounts == null || accounts.isEmpty() || accounts[0].Customer_Id__c == null ) {
             throw new AuraHandledException('Account not found: ' + accountId);
         }
 

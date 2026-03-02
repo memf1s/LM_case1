@@ -1,0 +1,76 @@
+<template>
+  <lightning-card
+    title="Potential Duplicate Accounts (Shared Email Domain)"
+    icon-name="standard:account">
+
+    <div slot="actions">
+      <lightning-button-icon
+        icon-name="utility:refresh"
+        alternative-text="Refresh"
+        title="Refresh"
+        onclick={handleRefresh}
+        disabled={isLoading}>
+      </lightning-button-icon>
+    </div>
+
+    <template if:true={isLoading}>
+      <div class="slds-p-around_large slds-align_absolute-center">
+        <lightning-spinner
+          alternative-text="Searching for related accounts…"
+          size="small">
+        </lightning-spinner>
+      </div>
+    </template>
+
+    <template if:true={error}>
+      <div class="slds-p-around_medium">
+        <div class="slds-notify slds-notify_alert slds-theme_error slds-theme_alert-texture"
+             role="alert">
+          <lightning-icon
+            icon-name="utility:error"
+            alternative-text="Error"
+            variant="inverse"
+            size="small"
+            class="slds-m-right_x-small">
+          </lightning-icon>
+          {error}
+        </div>
+      </div>
+    </template>
+
+    <template if:true={hasAccounts}>
+      <div class="slds-p-horizontal_medium slds-p-top_small">
+        <p class="slds-text-body_small slds-text-color_weak result-count">
+          {accounts.length} account(s) found sharing an email domain with this account's contacts.
+          These may represent the same entity — review before merging.
+        </p>
+      </div>
+
+      <div class="slds-p-around_medium">
+        <lightning-datatable
+          key-field="accountId"
+          data={accounts}
+          columns={columns}
+          hide-checkbox-column
+          sorted-by={sortedBy}
+          sorted-direction={sortedDirection}
+          onsort={handleSort}>
+        </lightning-datatable>
+      </div>
+    </template>
+
+    <template if:true={showEmpty}>
+      <div class="slds-p-around_large slds-text-align_center">
+        <lightning-icon
+          icon-name="utility:check"
+          size="large"
+          class="icon-green">
+        </lightning-icon>
+        <p class="slds-m-top_small slds-text-body_regular slds-text-color_weak">
+          No other accounts share an email domain with this account's contacts.
+        </p>
+      </div>
+    </template>
+
+  </lightning-card>
+</template>
