@@ -1,0 +1,129 @@
+<template>
+  <lightning-card title="Transaction Viewer" icon-name="standard:log">
+
+    <div class="slds-p-horizontal_medium slds-p-top_medium">
+      <div class="slds-grid slds-gutters slds-wrap slds-grid_align-end">
+
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12">
+          <lightning-input
+            type="datetime"
+            label="Start Date"
+            name="startDate"
+            value={startDate}
+            required
+            onchange={handleStartDate}>
+          </lightning-input>
+        </div>
+
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12">
+          <lightning-input
+            type="datetime"
+            label="End Date"
+            name="endDate"
+            value={endDate}
+            onchange={handleEndDate}>
+          </lightning-input>
+        </div>
+
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-align-bottom">
+          <lightning-button
+            label="Load Transactions"
+            variant="brand"
+            icon-name="utility:search"
+            onclick={loadTransactions}
+            disabled={isLoading}>
+          </lightning-button>
+
+          <lightning-button
+            if:true={hasTransactions}
+            label="Clear"
+            variant="neutral"
+            class="slds-m-left_x-small"
+            onclick={clearResults}>
+          </lightning-button>
+        </div>
+      </div>
+    </div>
+
+    <template if:true={isLoading}>
+      <div class="slds-p-around_large slds-align_absolute-center">
+        <lightning-spinner
+          alternative-text="Loading transactions…"
+          size="medium">
+        </lightning-spinner>
+      </div>
+    </template>
+
+    <template if:true={errorMessage}>
+      <div class="slds-p-around_medium">
+        <div class="slds-notify slds-notify_alert slds-theme_error slds-theme_alert-texture"
+             role="alert">
+          <lightning-icon
+            icon-name="utility:error"
+            alternative-text="Error"
+            variant="inverse"
+            size="small"
+            class="slds-m-right_x-small">
+          </lightning-icon>
+          {errorMessage}
+        </div>
+      </div>
+    </template>
+
+    <template if:true={hasTransactions}>
+      <div class="slds-p-horizontal_medium slds-p-top_small">
+        <div class="slds-grid slds-gutters">
+          <div class="slds-col slds-size_1-of-3">
+            <div class="stat-card">
+              <span class="stat-value">{totalTransactions}</span>
+              <span class="stat-label">Total Transactions</span>
+            </div>
+          </div>
+          <div class="slds-col slds-size_1-of-3">
+            <div class="stat-card">
+              <span class="stat-value">{totalMessageParts}</span>
+              <span class="stat-label">Total Message Parts</span>
+            </div>
+          </div>
+          <div class="slds-col slds-size_1-of-3">
+            <div class="stat-card">
+              <span class="stat-value">{uniqueAccountCount}</span>
+              <span class="stat-label">Unique API Accounts</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slds-p-around_medium">
+        <lightning-datatable
+          key-field="transactionId"
+          data={transactions}
+          columns={columns}
+          hide-checkbox-column
+          sorted-by={sortedBy}
+          sorted-direction={sortedDirection}
+          onsort={handleSort}
+          default-sort-direction="asc"
+          resize-column-disabled=false>
+        </lightning-datatable>
+      </div>
+    </template>
+
+    <template if:true={showEmpty}>
+      <div class="slds-illustration slds-illustration_small slds-p-around_large">
+        <div class="slds-text-longform">
+          <p class="slds-text-body_regular slds-text-color_weak">
+            No transactions found for the selected date range.
+          </p>
+        </div>
+      </div>
+    </template>
+
+    <template if:true={showInitialState}>
+      <div class="slds-p-around_medium slds-text-align_center slds-text-color_weak">
+        <p>Select a date range and click <strong>Load Transactions</strong> to view data.</p>
+      </div>
+    </template>
+
+  </lightning-card>
+</template>

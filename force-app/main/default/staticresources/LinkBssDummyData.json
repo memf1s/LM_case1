@@ -1,0 +1,694 @@
+[
+  {
+    "customerId": "100001",
+    "transactions": [
+      {
+        "transactionId": "TX-100001-0001",
+        "messageparts": 1,
+        "accountId": "ACC-874201",
+        "date": "2026-01-03TT10:12:35Z"
+      },
+      {
+        "transactionId": "TX-100001-0002",
+        "messageparts": 2,
+        "accountId": "ACC-874201",
+        "date": "2026-01-05TT08:44:10Z"
+      },
+      {
+        "transactionId": "TX-100001-0003",
+        "messageparts": 1,
+        "accountId": "ACC-992310",
+        "date": "2026-01-12TT19:03:51Z"
+      },
+      {
+        "transactionId": "TX-100001-0004",
+        "messageparts": 3,
+        "accountId": "ACC-992310",
+        "date": "2026-01-15TT14:26:00Z"
+      },
+      {
+        "transactionId": "TX-100001-0005",
+        "messageparts": 2,
+        "accountId": "ACC-874201",
+        "date": "2026-01-22TT07:11:22Z"
+      }
+    ]
+  },
+  {
+    "customerId": "100002",
+    "transactions": [
+      {
+        "transactionId": "TX-100002-0001",
+        "messageparts": 2,
+        "accountId": "ACC-551234",
+        "date": "2025-12-28TT09:00:00Z"
+      },
+      {
+        "transactionId": "TX-100002-0002",
+        "messageparts": 1,
+        "accountId": "ACC-551234",
+        "date": "2026-01-02TT18:21:05Z"
+      },
+      {
+        "transactionId": "TX-100002-0003",
+        "messageparts": 4,
+        "accountId": "ACC-778820",
+        "date": "2026-01-09TT11:45:33Z"
+      },
+      {
+        "transactionId": "TX-100002-0004",
+        "messageparts": 1,
+        "accountId": "ACC-551234",
+        "date": "2026-01-13TT06:12:17Z"
+      },
+      {
+        "transactionId": "TX-100002-0005",
+        "messageparts": 2,
+        "accountId": "ACC-778820",
+        "date": "2026-01-20TT20:59:59Z"
+      },
+      {
+        "transactionId": "TX-100002-0006",
+        "messageparts": 3,
+        "accountId": "ACC-778820",
+        "date": "2026-01-25TT15:37:41Z"
+      }
+    ]
+  },
+  {
+    "customerId": "100003",
+    "transactions": [
+      {
+        "transactionId": "TX-100003-0001",
+        "messageparts": 1,
+        "accountId": "ACC-660011",
+        "date": "2026-02-01TT00:10:42Z"
+      },
+      {
+        "transactionId": "TX-100003-0002",
+        "messageparts": 2,
+        "accountId": "ACC-660011",
+        "date": "2026-02-02TT12:34:56Z"
+      },
+      {
+        "transactionId": "TX-100003-0003",
+        "messageparts": 1,
+        "accountId": "ACC-904455",
+        "date": "2026-02-05TT09:09:09Z"
+      },
+      {
+        "transactionId": "TX-100003-0004",
+        "messageparts": 5,
+        "accountId": "ACC-904455",
+        "date": "2026-02-07TT21:30:00Z"
+      },
+      {
+        "transactionId": "TX-100003-0005",
+        "messageparts": 2,
+        "accountId": "ACC-660011",
+        "date": "2026-02-12TT10:10:10Z"
+      },
+      {
+        "transactionId": "TX-100003-0006",
+        "messageparts": 3,
+        "accountId": "ACC-660011",
+        "date": "2026-02-18TT16:45:22Z"
+      },
+      {
+        "transactionId": "TX-100003-0007",
+        "messageparts": 1,
+        "accountId": "ACC-904455",
+        "date": "2026-02-20TT08:01:39Z"
+      }
+    ]
+  },
+  {
+    "customerId": "100004",
+    "transactions": [
+      {
+        "transactionId": "TX-100004-0001",
+        "messageparts": 2,
+        "accountId": "ACC-333201",
+        "date": "2026-01-04TT05:05:05Z"
+      },
+      {
+        "transactionId": "TX-100004-0002",
+        "messageparts": 2,
+        "accountId": "ACC-333201",
+        "date": "2026-01-08TT13:13:13Z"
+      },
+      {
+        "transactionId": "TX-100004-0003",
+        "messageparts": 1,
+        "accountId": "ACC-333201",
+        "date": "2026-01-10TT22:22:22Z"
+      },
+      {
+        "transactionId": "TX-100004-0004",
+        "messageparts": 3,
+        "accountId": "ACC-701122",
+        "date": "2026-01-16TT07:30:45Z"
+      },
+      {
+        "transactionId": "TX-100004-0005",
+        "messageparts": 1,
+        "accountId": "ACC-701122",
+        "date": "2026-01-18TT19:19:19Z"
+      },
+      {
+        "transactionId": "TX-100004-0006",
+        "messageparts": 4,
+        "accountId": "ACC-333201",
+        "date": "2026-01-23TT03:33:33Z"
+      },
+      {
+        "transactionId": "TX-100004-0007",
+        "messageparts": 1,
+        "accountId": "ACC-333201",
+        "date": "2026-01-26TT12:00:00Z"
+      },
+      {
+        "transactionId": "TX-100004-0008",
+        "messageparts": 2,
+        "accountId": "ACC-701122",
+        "date": "2026-01-30TT23:59:59Z"
+      }
+    ]
+  },
+  {
+    "customerId": "100005",
+    "transactions": [
+      {
+        "transactionId": "TX-100005-0001",
+        "messageparts": 1,
+        "accountId": "ACC-562890",
+        "date": "2025-12-31TT23:45:00Z"
+      },
+      {
+        "transactionId": "TX-100005-0002",
+        "messageparts": 2,
+        "accountId": "ACC-562890",
+        "date": "2026-01-01TT00:15:00Z"
+      },
+      {
+        "transactionId": "TX-100005-0003",
+        "messageparts": 3,
+        "accountId": "ACC-120034",
+        "date": "2026-01-03TT08:08:08Z"
+      },
+      {
+        "transactionId": "TX-100005-0004",
+        "messageparts": 1,
+        "accountId": "ACC-120034",
+        "date": "2026-01-06TT11:11:11Z"
+      },
+      {
+        "transactionId": "TX-100005-0005",
+        "messageparts": 2,
+        "accountId": "ACC-562890",
+        "date": "2026-01-09TT17:20:30Z"
+      },
+      {
+        "transactionId": "TX-100005-0006",
+        "messageparts": 4,
+        "accountId": "ACC-562890",
+        "date": "2026-01-12TT04:04:04Z"
+      },
+      {
+        "transactionId": "TX-100005-0007",
+        "messageparts": 1,
+        "accountId": "ACC-120034",
+        "date": "2026-01-17TT14:14:14Z"
+      },
+      {
+        "transactionId": "TX-100005-0008",
+        "messageparts": 2,
+        "accountId": "ACC-120034",
+        "date": "2026-01-21TT21:21:21Z"
+      },
+      {
+        "transactionId": "TX-100005-0009",
+        "messageparts": 1,
+        "accountId": "ACC-562890",
+        "date": "2026-01-27TT07:07:07Z"
+      }
+    ]
+  },
+  {
+    "customerId": "100006",
+    "transactions": [
+      {
+        "transactionId": "TX-100006-0001",
+        "messageparts": 1,
+        "accountId": "ACC-406060",
+        "date": "2026-01-02TT02:02:02Z"
+      },
+      {
+        "transactionId": "TX-100006-0002",
+        "messageparts": 2,
+        "accountId": "ACC-406060",
+        "date": "2026-01-03TT03:03:03Z"
+      },
+      {
+        "transactionId": "TX-100006-0003",
+        "messageparts": 3,
+        "accountId": "ACC-983344",
+        "date": "2026-01-04TT04:04:04Z"
+      },
+      {
+        "transactionId": "TX-100006-0004",
+        "messageparts": 1,
+        "accountId": "ACC-983344",
+        "date": "2026-01-05TT05:05:05Z"
+      },
+      {
+        "transactionId": "TX-100006-0005",
+        "messageparts": 2,
+        "accountId": "ACC-406060",
+        "date": "2026-01-06TT06:06:06Z"
+      },
+      {
+        "transactionId": "TX-100006-0006",
+        "messageparts": 1,
+        "accountId": "ACC-406060",
+        "date": "2026-01-07TT07:07:07Z"
+      },
+      {
+        "transactionId": "TX-100006-0007",
+        "messageparts": 4,
+        "accountId": "ACC-983344",
+        "date": "2026-01-08TT08:08:08Z"
+      },
+      {
+        "transactionId": "TX-100006-0008",
+        "messageparts": 2,
+        "accountId": "ACC-983344",
+        "date": "2026-01-09TT09:09:09Z"
+      },
+      {
+        "transactionId": "TX-100006-0009",
+        "messageparts": 3,
+        "accountId": "ACC-406060",
+        "date": "2026-01-10TT10:10:10Z"
+      },
+      {
+        "transactionId": "TX-100006-0010",
+        "messageparts": 1,
+        "accountId": "ACC-406060",
+        "date": "2026-01-11TT11:11:11Z"
+      }
+    ]
+  },
+  {
+    "customerId": "100007",
+    "transactions": [
+      {
+        "transactionId": "TX-100007-0001",
+        "messageparts": 2,
+        "accountId": "ACC-700100",
+        "date": "2026-02-01TT01:00:00Z"
+      },
+      {
+        "transactionId": "TX-100007-0002",
+        "messageparts": 2,
+        "accountId": "ACC-700100",
+        "date": "2026-02-01TT02:00:00Z"
+      },
+      {
+        "transactionId": "TX-100007-0003",
+        "messageparts": 1,
+        "accountId": "ACC-700100",
+        "date": "2026-02-01TT03:00:00Z"
+      },
+      {
+        "transactionId": "TX-100007-0004",
+        "messageparts": 3,
+        "accountId": "ACC-915915",
+        "date": "2026-02-02TT04:00:00Z"
+      },
+      {
+        "transactionId": "TX-100007-0005",
+        "messageparts": 1,
+        "accountId": "ACC-915915",
+        "date": "2026-02-02TT05:00:00Z"
+      },
+      {
+        "transactionId": "TX-100007-0006",
+        "messageparts": 2,
+        "accountId": "ACC-915915",
+        "date": "2026-02-03TT06:00:00Z"
+      },
+      {
+        "transactionId": "TX-100007-0007",
+        "messageparts": 4,
+        "accountId": "ACC-700100",
+        "date": "2026-02-04TT07:00:00Z"
+      },
+      {
+        "transactionId": "TX-100007-0008",
+        "messageparts": 1,
+        "accountId": "ACC-700100",
+        "date": "2026-02-05TT08:00:00Z"
+      },
+      {
+        "transactionId": "TX-100007-0009",
+        "messageparts": 2,
+        "accountId": "ACC-915915",
+        "date": "2026-02-06TT09:00:00Z"
+      },
+      {
+        "transactionId": "TX-100007-0010",
+        "messageparts": 3,
+        "accountId": "ACC-915915",
+        "date": "2026-02-07TT10:00:00Z"
+      },
+      {
+        "transactionId": "TX-100007-0011",
+        "messageparts": 1,
+        "accountId": "ACC-700100",
+        "date": "2026-02-08TT11:00:00Z"
+      },
+      {
+        "transactionId": "TX-100007-0012",
+        "messageparts": 2,
+        "accountId": "ACC-700100",
+        "date": "2026-02-09TT12:00:00Z"
+      }
+    ]
+  },
+  {
+    "customerId": "100008",
+    "transactions": [
+      {
+        "transactionId": "TX-100008-0001",
+        "messageparts": 1,
+        "accountId": "ACC-310210",
+        "date": "2026-01-01TT00:00:10Z"
+      },
+      {
+        "transactionId": "TX-100008-0002",
+        "messageparts": 2,
+        "accountId": "ACC-310210",
+        "date": "2026-01-02TT00:00:20Z"
+      },
+      {
+        "transactionId": "TX-100008-0003",
+        "messageparts": 2,
+        "accountId": "ACC-310210",
+        "date": "2026-01-03TT00:00:30Z"
+      },
+      {
+        "transactionId": "TX-100008-0004",
+        "messageparts": 3,
+        "accountId": "ACC-310210",
+        "date": "2026-01-04TT00:00:40Z"
+      },
+      {
+        "transactionId": "TX-100008-0005",
+        "messageparts": 1,
+        "accountId": "ACC-310210",
+        "date": "2026-01-05TT00:00:50Z"
+      },
+      {
+        "transactionId": "TX-100008-0006",
+        "messageparts": 4,
+        "accountId": "ACC-991122",
+        "date": "2026-01-06TT00:01:00Z"
+      },
+      {
+        "transactionId": "TX-100008-0007",
+        "messageparts": 1,
+        "accountId": "ACC-991122",
+        "date": "2026-01-07TT00:01:10Z"
+      },
+      {
+        "transactionId": "TX-100008-0008",
+        "messageparts": 2,
+        "accountId": "ACC-991122",
+        "date": "2026-01-08TT00:01:20Z"
+      },
+      {
+        "transactionId": "TX-100008-0009",
+        "messageparts": 2,
+        "accountId": "ACC-991122",
+        "date": "2026-01-09TT00:01:30Z"
+      },
+      {
+        "transactionId": "TX-100008-0010",
+        "messageparts": 1,
+        "accountId": "ACC-991122",
+        "date": "2026-01-10TT00:01:40Z"
+      },
+      {
+        "transactionId": "TX-100008-0011",
+        "messageparts": 3,
+        "accountId": "ACC-310210",
+        "date": "2026-01-11TT00:01:50Z"
+      },
+      {
+        "transactionId": "TX-100008-0012",
+        "messageparts": 2,
+        "accountId": "ACC-310210",
+        "date": "2026-01-12TT00:02:00Z"
+      },
+      {
+        "transactionId": "TX-100008-0013",
+        "messageparts": 1,
+        "accountId": "ACC-310210",
+        "date": "2026-01-13TT00:02:10Z"
+      },
+      {
+        "transactionId": "TX-100008-0014",
+        "messageparts": 2,
+        "accountId": "ACC-991122",
+        "date": "2026-01-14TT00:02:20Z"
+      }
+    ]
+  },
+  {
+    "customerId": "100009",
+    "transactions": [
+      {
+        "transactionId": "TX-100009-0001",
+        "messageparts": 1,
+        "accountId": "ACC-845600",
+        "date": "2025-12-20TT10:00:00Z"
+      },
+      {
+        "transactionId": "TX-100009-0002",
+        "messageparts": 2,
+        "accountId": "ACC-845600",
+        "date": "2025-12-21TT10:00:00Z"
+      },
+      {
+        "transactionId": "TX-100009-0003",
+        "messageparts": 3,
+        "accountId": "ACC-845600",
+        "date": "2025-12-22TT10:00:00Z"
+      },
+      {
+        "transactionId": "TX-100009-0004",
+        "messageparts": 1,
+        "accountId": "ACC-222333",
+        "date": "2025-12-23TT10:00:00Z"
+      },
+      {
+        "transactionId": "TX-100009-0005",
+        "messageparts": 1,
+        "accountId": "ACC-222333",
+        "date": "2025-12-24TT10:00:00Z"
+      },
+      {
+        "transactionId": "TX-100009-0006",
+        "messageparts": 4,
+        "accountId": "ACC-222333",
+        "date": "2025-12-25TT10:00:00Z"
+      },
+      {
+        "transactionId": "TX-100009-0007",
+        "messageparts": 2,
+        "accountId": "ACC-222333",
+        "date": "2025-12-26TT10:00:00Z"
+      },
+      {
+        "transactionId": "TX-100009-0008",
+        "messageparts": 1,
+        "accountId": "ACC-845600",
+        "date": "2025-12-27TT10:00:00Z"
+      },
+      {
+        "transactionId": "TX-100009-0009",
+        "messageparts": 2,
+        "accountId": "ACC-845600",
+        "date": "2025-12-28TT10:00:00Z"
+      },
+      {
+        "transactionId": "TX-100009-0010",
+        "messageparts": 3,
+        "accountId": "ACC-845600",
+        "date": "2025-12-29TT10:00:00Z"
+      },
+      {
+        "transactionId": "TX-100009-0011",
+        "messageparts": 1,
+        "accountId": "ACC-845600",
+        "date": "2025-12-30TT10:00:00Z"
+      },
+      {
+        "transactionId": "TX-100009-0012",
+        "messageparts": 2,
+        "accountId": "ACC-222333",
+        "date": "2025-12-31TT10:00:00Z"
+      },
+      {
+        "transactionId": "TX-100009-0013",
+        "messageparts": 1,
+        "accountId": "ACC-222333",
+        "date": "2026-01-01TT10:00:00Z"
+      },
+      {
+        "transactionId": "TX-100009-0014",
+        "messageparts": 4,
+        "accountId": "ACC-845600",
+        "date": "2026-01-02TT10:00:00Z"
+      },
+      {
+        "transactionId": "TX-100009-0015",
+        "messageparts": 2,
+        "accountId": "ACC-845600",
+        "date": "2026-01-03TT10:00:00Z"
+      },
+      {
+        "transactionId": "TX-100009-0016",
+        "messageparts": 1,
+        "accountId": "ACC-222333",
+        "date": "2026-01-04TT10:00:00Z"
+      }
+    ]
+  },
+  {
+    "customerId": "100010",
+    "transactions": [
+      {
+        "transactionId": "TX-100010-0001",
+        "messageparts": 1,
+        "accountId": "ACC-500001",
+        "date": "2026-01-01TT01:01:01Z"
+      },
+      {
+        "transactionId": "TX-100010-0002",
+        "messageparts": 1,
+        "accountId": "ACC-500001",
+        "date": "2026-01-02TT02:02:02Z"
+      },
+      {
+        "transactionId": "TX-100010-0003",
+        "messageparts": 2,
+        "accountId": "ACC-500001",
+        "date": "2026-01-03TT03:03:03Z"
+      },
+      {
+        "transactionId": "TX-100010-0004",
+        "messageparts": 3,
+        "accountId": "ACC-500001",
+        "date": "2026-01-04TT04:04:04Z"
+      },
+      {
+        "transactionId": "TX-100010-0005",
+        "messageparts": 2,
+        "accountId": "ACC-500001",
+        "date": "2026-01-05TT05:05:05Z"
+      },
+      {
+        "transactionId": "TX-100010-0006",
+        "messageparts": 1,
+        "accountId": "ACC-777777",
+        "date": "2026-01-06TT06:06:06Z"
+      },
+      {
+        "transactionId": "TX-100010-0007",
+        "messageparts": 4,
+        "accountId": "ACC-777777",
+        "date": "2026-01-07TT07:07:07Z"
+      },
+      {
+        "transactionId": "TX-100010-0008",
+        "messageparts": 1,
+        "accountId": "ACC-777777",
+        "date": "2026-01-08TT08:08:08Z"
+      },
+      {
+        "transactionId": "TX-100010-0009",
+        "messageparts": 2,
+        "accountId": "ACC-777777",
+        "date": "2026-01-09TT09:09:09Z"
+      },
+      {
+        "transactionId": "TX-100010-0010",
+        "messageparts": 3,
+        "accountId": "ACC-500001",
+        "date": "2026-01-10TT10:10:10Z"
+      },
+      {
+        "transactionId": "TX-100010-0011",
+        "messageparts": 2,
+        "accountId": "ACC-500001",
+        "date": "2026-01-11TT11:11:11Z"
+      },
+      {
+        "transactionId": "TX-100010-0012",
+        "messageparts": 1,
+        "accountId": "ACC-500001",
+        "date": "2026-01-12TT12:12:12Z"
+      },
+      {
+        "transactionId": "TX-100010-0013",
+        "messageparts": 2,
+        "accountId": "ACC-777777",
+        "date": "2026-01-13TT13:13:13Z"
+      },
+      {
+        "transactionId": "TX-100010-0014",
+        "messageparts": 1,
+        "accountId": "ACC-777777",
+        "date": "2026-01-14TT14:14:14Z"
+      },
+      {
+        "transactionId": "TX-100010-0015",
+        "messageparts": 3,
+        "accountId": "ACC-500001",
+        "date": "2026-01-15TT15:15:15Z"
+      },
+      {
+        "transactionId": "TX-100010-0016",
+        "messageparts": 2,
+        "accountId": "ACC-500001",
+        "date": "2026-01-16TT16:16:16Z"
+      },
+      {
+        "transactionId": "TX-100010-0017",
+        "messageparts": 4,
+        "accountId": "ACC-777777",
+        "date": "2026-01-17TT17:17:17Z"
+      },
+      {
+        "transactionId": "TX-100010-0018",
+        "messageparts": 1,
+        "accountId": "ACC-777777",
+        "date": "2026-01-18TT18:18:18Z"
+      },
+      {
+        "transactionId": "TX-100010-0019",
+        "messageparts": 2,
+        "accountId": "ACC-500001",
+        "date": "2026-01-19TT19:19:19Z"
+      },
+      {
+        "transactionId": "TX-100010-0020",
+        "messageparts": 1,
+        "accountId": "ACC-500001",
+        "date": "2026-01-20TT20:20:20Z"
+      }
+    ]
+  }
+]
